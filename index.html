@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy Arduino, motors, robotics kits, and inverters in Varanasi. Fast delivery, best prices, expert support.">
+    <meta name="keywords" content="electronics store Varanasi, Arduino Varanasi, inverters Varanasi, robotics kits Varanasi, solar solutions Varanasi, motor drivers Varanasi, DIY electronics Uttar Pradesh">
+    <title>VARATECH - Electronics Store in Varanasi | Arduino, Motors, Inverters</title>
+    <style>
+        :root {
+            --bg-primary: #0A0A0A;
+            --bg-secondary: linear-gradient(180deg, #0A0A0A 0%, #001F33 100%);
+            --accent: #00F5FF;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --card-bg: rgba(26, 30, 46, 0.85);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3 {
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--accent);
+            box-shadow: 0 0 12px var(--accent);
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 245, 255, 0.2);
+            padding: 1rem 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: var(--accent);
+            text-shadow: 0 0 20px var(--accent);
+        }
+
+        .logo span {
+            color: #fff;
+            margin-left: 4px;
+            font-size: 1.4rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            box-shadow: 0 0 8px var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+            text-shadow: 0 0 10px var(--accent);
+        }
+
+        /* CSS-ONLY HAMBURGER */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 8px var(--accent);
+        }
+
+        .nav-toggle {
+            display: none;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 0 5%;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 40%, rgba(0, 245, 255, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(0, 245, 255, 0.12) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text h1 {
+            text-shadow: 0 0 30px var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.35rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            max-width: 480px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #000;
+            box-shadow: 0 0 25px var(--accent),
+                        inset 0 0 15px rgba(255,255,255,0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 40px var(--accent);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            box-shadow: 0 0 20px var(--accent);
+        }
+
+        .btn-outline:hover {
+            background: var(--accent);
+            color: #000;
+            box-shadow: 0 0 35px var(--accent);
+        }
+
+        /* HERO VISUAL - Pure CSS + SVG Circuit */
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circuit-svg {
+            width: 100%;
+            max-width: 420px;
+            filter: drop-shadow(0 0 30px var(--accent));
+        }
+
+        /* FEATURE HIGHLIGHTS */
+        .features {
+            padding: 5rem 5%;
+            background: #0A0A0A;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(0, 245, 255, 0.25);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 25px rgba(0, 245, 255, 0.15);
+        }
+
+        .feature-card:hover {
+            transform: scale(1.06);
+            border-color: var(--accent);
+            box-shadow: 0 0 40px rgba(0, 245, 255, 0.4);
+        }
+
+        .feature-card .icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        /* CATEGORIES */
+        .categories {
+            padding: 5rem 5%;
+            background: #001F33;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.8rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .category-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .category-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 35px rgba(0, 245, 255, 0.5);
+            transform: translateY(-8px);
+        }
+
+        .category-card .icon {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .category-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* FEATURED PRODUCTS */
+        .featured {
+            padding: 5rem 5%;
+            background: #0A0A0A;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            transition: all 0.4s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 40px rgba(0, 245, 255, 0.4);
+        }
+
+        .product-image {
+            height: 200px;
+            background: linear-gradient(135deg, #1A2A3A, #112233);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            position: relative;
+        }
+
+        .product-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(transparent, rgba(0, 245, 255, 0.1));
+            opacity: 0.3;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .product-spec {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .product-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .product-buttons a {
+            flex: 1;
+            text-align: center;
+            padding: 12px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* DIY KITS */
+        .diy-kits {
+            padding: 5rem 5%;
+            background: #001F33;
+        }
+
+        .kits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .kit-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2.5rem;
+            border: 2px solid var(--accent);
+            box-shadow: 0 0 30px rgba(0, 245, 255, 0.3);
+            position: relative;
+        }
+
+        .kit-card .tag {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #00F5FF;
+            color: #000;
+            font-size: 0.75rem;
+            padding: 4px 14px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 0 15px var(--accent);
+        }
+
+        /* SERVICES */
+        .services {
+            padding: 5rem 5%;
+            background: #0A0A0A;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* WHY CHOOSE US */
+        .why-us {
+            padding: 5rem 5%;
+            background: #001F33;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* REVIEWS */
+        .reviews {
+            padding: 5rem 5%;
+            background: #0A0A0A;
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .review-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(0, 245, 255, 0.2);
+        }
+
+        .stars {
+            color: #FFD700;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        /* LOCAL SEO / CONTACT */
+        .local {
+            padding: 5rem 5%;
+            background: #001F33;
+        }
+
+        .local-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .local-info {
+            background: rgba(10, 10, 10, 0.7);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid var(--accent);
+            box-shadow: 0 0 30px rgba(0, 245, 255, 0.25);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #050505;
+            padding: 4rem 5% 2rem;
+            border-top: 1px solid rgba(0, 245, 255, 0.15);
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+            text-shadow: 0 0 15px var(--accent);
+        }
+
+        .footer-links h4 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: block;
+            padding: 6px 0;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-contact {
+            color: var(--text-secondary);
+        }
+
+        .footer-contact p {
+            margin-bottom: 0.8rem;
+        }
+
+        .socials a {
+            color: var(--accent);
+            font-size: 1.6rem;
+            margin-right: 1rem;
+            transition: all 0.3s;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-visual {
+                margin: 2rem auto 0;
+                max-width: 320px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 1rem 5%;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #0A0A0A;
+                flex-direction: column;
+                padding: 1.5rem 5%;
+                gap: 1.2rem;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+                border-top: 1px solid rgba(0, 245, 255, 0.2);
+            }
+            
+            .nav-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .nav-links a {
+                font-size: 1.2rem;
+            }
+            
+            .cta-buttons {
+                justify-content: center;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .local-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .products-grid,
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* SMOOTH SCROLL & GENERAL */
+        section {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STICKY NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                VARATECH
+                <span>⚡</span>
+            </div>
+
+            <!-- Hamburger toggle (CSS only) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation -->
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            
+            <!-- Hero Text -->
+            <div class="hero-text">
+                <h1>Your Trusted Electronics &amp; Inverter Store in Varanasi</h1>
+                <p>Arduino | Robotics | Motors | Inverters | Solar Solutions</p>
+                
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Shop Now →</a>
+                    <a href="#" class="btn btn-outline">Get Installation Service</a>
+                </div>
+                
+                <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.8;">
+                    📍 Varanasi • Fast local delivery • Expert support since 2018
+                </p>
+            </div>
+
+            <!-- Hero Visual - Pure CSS + SVG Circuit -->
+            <div class="hero-visual">
+                <svg class="circuit-svg" viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background glow layer -->
+                    <rect x="40" y="40" width="340" height="300" rx="20" fill="#112233" fill-opacity="0.3"/>
+                    <!-- Circuit lines -->
+                    <path d="M80 120 L180 120 L180 200 L280 200" stroke="#00F5FF" stroke-width="6" stroke-opacity="0.6"/>
+                    <path d="M100 80 L100 280" stroke="#00F5FF" stroke-width="6" stroke-opacity="0.6"/>
+                    <path d="M220 80 L220 260" stroke="#00F5FF" stroke-width="6" stroke-opacity="0.6"/>
+                    <path d="M300 140 L340 140" stroke="#00F5FF" stroke-width="6" stroke-opacity="0.6"/>
+                    <!-- Nodes -->
+                    <circle cx="80" cy="120" r="14" fill="#001F33" stroke="#00F5FF" stroke-width="8"/>
+                    <circle cx="180" cy="120" r="14" fill="#001F33" stroke="#00F5FF" stroke-width="8"/>
+                    <circle cx="180" cy="200" r="14" fill="#001F33" stroke="#00F5FF" stroke-width="8"/>
+                    <circle cx="280" cy="200" r="14" fill="#001F33" stroke="#00F5FF" stroke-width="8"/>
+                    <circle cx="100" cy="80" r="14" fill="#001F33" stroke="#00F5FF" stroke-width="8"/>
+                    <circle cx="100" cy="280" r="14" fill="#001F33" stroke="#00F5FF" stroke-width="8"/>
+                    <circle cx="220" cy="80" r="14" fill="#001F33" stroke="#00F5FF" stroke-width="8"/>
+                    <circle cx="220" cy="260" r="14" fill="#001F33" stroke="#00F5FF" stroke-width="8"/>
+                    <circle cx="300" cy="140" r="14" fill="#001F33" stroke="#00F5FF" stroke-width="8"/>
+                    <!-- Inner glowing dots -->
+                    <circle cx="80" cy="120" r="5" fill="#00F5FF"/>
+                    <circle cx="180" cy="120" r="5" fill="#00F5FF"/>
+                    <circle cx="180" cy="200" r="5" fill="#00F5FF"/>
+                    <circle cx="280" cy="200" r="5" fill="#00F5FF"/>
+                    <circle cx="100" cy="80" r="5" fill="#00F5FF"/>
+                    <circle cx="100" cy="280" r="5" fill="#00F5FF"/>
+                    <circle cx="220" cy="80" r="5" fill="#00F5FF"/>
+                    <circle cx="220" cy="260" r="5" fill="#00F5FF"/>
+                    <circle cx="300" cy="140" r="5" fill="#00F5FF"/>
+                    <!-- Neon filter effect simulation -->
+                    <defs>
+                        <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURE HIGHLIGHTS -->
+    <section class="features" id="features">
+        <div style="max-width:1200px;margin:0 auto;">
+            <h2 class="section-title" style="text-align:center;">Why Varanasi Trusts VARATECH</h2>
+            
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <span class="icon">🚀</span>
+                    <h3>Fast Local Delivery</h3>
+                    <p style="color:var(--text-secondary);margin-top:1rem;">Same-day delivery across Varanasi &amp; nearby areas in Uttar Pradesh. Orders placed before 2 PM delivered today.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <span class="icon">✅</span>
+                    <h3>Genuine Components</h3>
+                    <p style="color:var(--text-secondary);margin-top:1rem;">100% authentic Arduino, motors, sensors &amp; inverters. Official distributors with warranty on every product.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <span class="icon">🧠</span>
+                    <h3>Expert Support</h3>
+                    <p style="color:var(--text-secondary);margin-top:1rem;">Our in-house engineers provide free technical guidance for every project &amp; installation.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="feature-card">
+                    <span class="icon">🔧</span>
+                    <h3>Installation Services</h3>
+                    <p style="color:var(--text-secondary);margin-top:1rem;">Professional inverter, solar &amp; robotics setup at your doorstep in Varanasi &amp; surrounding regions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP BY CATEGORY -->
+    <section class="categories" id="categories">
+        <div style="max-width:1200px;margin:0 auto;">
+            <h2 class="section-title" style="text-align:center;">Shop by Category</h2>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <span class="icon">📟</span>
+                    <h3>Arduino Boards</h3>
+                    <p style="color:var(--text-secondary);font-size:0.9rem;">Uno, Nano, Mega &amp; ESP32</p>
+                </div>
+                <div class="category-card">
+                    <span class="icon">🌀</span>
+                    <h3>Motors &amp; Gear Motors</h3>
+                    <p style="color:var(--text-secondary);font-size:0.9rem;">DC, Stepper, Servo &amp; Metal Gear</p>
+                </div>
+                <div class="category-card">
+                    <span class="icon">⚙️</span>
+                    <h3>Motor Drivers</h3>
+                    <p style="color:var(--text-secondary);font-size:0.9rem;">L298N, TB6600, A4988 &amp; more</p>
+                </div>
+                <div class="category-card">
+                    <span class="icon">📡</span>
+                    <h3>Sensors &amp; Modules</h3>
+                    <p style="color:var(--text-secondary);font-size:0.9rem;">Ultrasonic, IR, Gyro, RFID</p>
+                </div>
+                <div class="category-card">
+                    <span class="icon">🤖</span>
+                    <h3>Robotics Accessories</h3>
+                    <p style="color:var(--text-secondary);font-size:0.9rem;">Chassis, Wheels, Arms &amp; Frames</p>
+                </div>
+                <div class="category-card">
+                    <span class="icon">🔋</span>
+                    <h3>Power &amp; Batteries</h3>
+                    <p style="color:var(--text-secondary);font-size:0.9rem;">Li-ion, LiPo, 12V SLA &amp; Chargers</p>
+                </div>
+                <div class="category-card">
+                    <span class="icon">☀️</span>
+                    <h3>Inverters &amp; Solar</h3>
+                    <p style="color:var(--text-secondary);font-size:0.9rem;">Pure Sine Wave, Panels &amp; MPPT</p>
+                </div>
+                <div class="category-card">
+                    <span class="icon">🛠️</span>
+                    <h3>DIY Kits</h3>
+                    <p style="color:var(--text-secondary);font-size:0.9rem;">Starter, Robot &amp; IoT bundles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="featured" id="shop">
+        <div style="max-width:1200px;margin:0 auto;">
+            <h2 class="section-title" style="text-align:center;">Featured Products</h2>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">🌀</div>
+                    <div class="product-info">
+                        <h3>6V 125RPM Metal Gear Motor</h3>
+                        <p class="product-spec">High torque • 6mm shaft • 1:120 ratio</p>
+                        <div class="price">₹349</div>
+                        <div class="product-buttons">
+                            <a href="#" style="background:var(--accent);color:#000;">Add to Cart</a>
+                            <a href="#" style="border:2px solid var(--accent);color:var(--accent);">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">📟</div>
+                    <div class="product-info">
+                        <h3>Arduino Uno R3 (Original)</h3>
+                        <p class="product-spec">ATmega328P • USB • Header pins</p>
+                        <div class="price">₹649</div>
+                        <div class="product-buttons">
+                            <a href="#" style="background:var(--accent);color:#000;">Add to Cart</a>
+                            <a href="#" style="border:2px solid var(--accent);color:var(--accent);">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">⚙️</div>
+                    <div class="product-info">
+                        <h3>L298N Dual Motor Driver</h3>
+                        <p class="product-spec">Up to 2A per channel • 5-35V</p>
+                        <div class="price">₹189</div>
+                        <div class="product-buttons">
+                            <a href="#" style="background:var(--accent);color:#000;">Add to Cart</a>
+                            <a href="#" style="border:2px solid var(--accent);color:var(--accent);">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">📡</div>
+                    <div class="product-info">
+                        <h3>HC-SR04 Ultrasonic Sensor</h3>
+                        <p class="product-spec">2-400cm range • Arduino ready</p>
+                        <div class="price">₹119</div>
+                        <div class="product-buttons">
+                            <a href="#" style="background:var(--accent);color:#000;">Add to Cart</a>
+                            <a href="#" style="border:2px solid var(--accent);color:var(--accent);">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">🔋</div>
+                    <div class="product-info">
+                        <h3>12V 7Ah Sealed Battery</h3>
+                        <p class="product-spec">Rechargeable SLA • Inverter use</p>
+                        <div class="price">₹849</div>
+                        <div class="product-buttons">
+                            <a href="#" style="background:var(--accent);color:#000;">Add to Cart</a>
+                            <a href="#" style="border:2px solid var(--accent);color:var(--accent);">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">☀️</div>
+                    <div class="product-info">
+                        <h3>800VA Pure Sine Wave Inverter</h3>
+                        <p class="product-spec">With battery backup • 12V input</p>
+                        <div class="price">₹3,299</div>
+                        <div class="product-buttons">
+                            <a href="#" style="background:var(--accent);color:#000;">Add to Cart</a>
+                            <a href="#" style="border:2px solid var(--accent);color:var(--accent);">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIY KITS SECTION -->
+    <section class="diy-kits" id="kits">
+        <div style="max-width:1200px;margin:0 auto;">
+            <h2 class="section-title" style="text-align:center;">Starter DIY Kits – Perfect for Beginners</h2>
+            
+            <div class="kits-grid">
+                <div class="kit-card">
+                    <div class="tag">Perfect for Beginners</div>
+                    <h3>Arduino Starter Kit</h3>
+                    <p style="margin:1.5rem 0;color:var(--text-secondary);">Includes Uno, breadboard, 40+ components, sensors &amp; detailed project manual. Build 12 projects instantly.</p>
+                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                        <span style="font-size:1.6rem;color:var(--accent);">₹1,299</span>
+                        <a href="#" class="btn btn-primary" style="padding:10px 24px;font-size:1rem;">Buy Kit</a>
+                    </div>
+                </div>
+                
+                <div class="kit-card">
+                    <div class="tag">Perfect for Beginners</div>
+                    <h3>Line Follower Robot Kit</h3>
+                    <p style="margin:1.5rem 0;color:var(--text-secondary);">Chassis, motors, IR sensors, Arduino Nano &amp; code. Build &amp; program your first robot in under 2 hours.</p>
+                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                        <span style="font-size:1.6rem;color:var(--accent);">₹1,899</span>
+                        <a href="#" class="btn btn-primary" style="padding:10px 24px;font-size:1rem;">Buy Kit</a>
+                    </div>
+                </div>
+                
+                <div class="kit-card">
+                    <div class="tag">Perfect for Beginners</div>
+                    <h3>ESP32 IoT Starter Kit</h3>
+                    <p style="margin:1.5rem 0;color:var(--text-secondary);">WiFi + Bluetooth board, sensors, OLED display &amp; cloud-ready projects. Connect to Blynk in minutes.</p>
+                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                        <span style="font-size:1.6rem;color:var(--accent);">₹2,499</span>
+                        <a href="#" class="btn btn-primary" style="padding:10px 24px;font-size:1rem;">Buy Kit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <div style="max-width:1200px;margin:0 auto;">
+            <h2 class="section-title" style="text-align:center;">Our Expert Services</h2>
+            
+            <div class="services-grid">
+                <div class="feature-card" style="text-align:left;padding:2rem;">
+                    <span class="icon" style="font-size:2.8rem;margin-bottom:1rem;">🔌</span>
+                    <h3>Inverter Installation</h3>
+                    <p style="color:var(--text-secondary);">Professional home &amp; shop inverter setup with battery integration. Same-day service in Varanasi.</p>
+                    <a href="#" class="btn btn-outline" style="margin-top:1.5rem;width:100%;justify-content:center;">Book Service →</a>
+                </div>
+                <div class="feature-card" style="text-align:left;padding:2rem;">
+                    <span class="icon" style="font-size:2.8rem;margin-bottom:1rem;">🔋</span>
+                    <h3>Battery Replacement</h3>
+                    <p style="color:var(--text-secondary);">Quick replacement of inverter &amp; solar batteries with testing &amp; warranty.</p>
+                    <a href="#" class="btn btn-outline" style="margin-top:1.5rem;width:100%;justify-content:center;">Book Service →</a>
+                </div>
+                <div class="feature-card" style="text-align:left;padding:2rem;">
+                    <span class="icon" style="font-size:2.8rem;margin-bottom:1rem;">☀️</span>
+                    <h3>Solar Panel Setup</h3>
+                    <p style="color:var(--text-secondary);">Complete rooftop solar system installation &amp; grid-tie solutions.</p>
+                    <a href="#" class="btn btn-outline" style="margin-top:1.5rem;width:100%;justify-content:center;">Book Service →</a>
+                </div>
+                <div class="feature-card" style="text-align:left;padding:2rem;">
+                    <span class="icon" style="font-size:2.8rem;margin-bottom:1rem;">🤖</span>
+                    <h3>Robotics Project Guidance</h3>
+                    <p style="color:var(--text-secondary);">One-on-one mentoring for school/college projects &amp; competition bots.</p>
+                    <a href="#" class="btn btn-outline" style="margin-top:1.5rem;width:100%;justify-content:center;">Book Service →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-us">
+        <div style="max-width:1200px;margin:0 auto;">
+            <h2 class="section-title" style="text-align:center;">Why Choose VARATECH in Varanasi?</h2>
+            
+            <div class="why-grid">
+                <div style="background:var(--card-bg);padding:1.8rem;border-radius:16px;border:1px solid rgba(0,245,255,0.2);">
+                    <h3 style="color:var(--accent);">🏠 Trusted Local Store</h3>
+                    <p style="color:var(--text-secondary);">Physically located in Lanka, Varanasi – walk-in support every day.</p>
+                </div>
+                <div style="background:var(--card-bg);padding:1.8rem;border-radius:16px;border:1px solid rgba(0,245,255,0.2);">
+                    <h3 style="color:var(--accent);">🛡️ High Quality Components</h3>
+                    <p style="color:var(--text-secondary);">Only genuine parts with manufacturer warranty.</p>
+                </div>
+                <div style="background:var(--card-bg);padding:1.8rem;border-radius:16px;border:1px solid rgba(0,245,255,0.2);">
+                    <h3 style="color:var(--accent);">💰 Affordable Pricing</h3>
+                    <p style="color:var(--text-secondary);">Best prices in Uttar Pradesh – no hidden charges.</p>
+                </div>
+                <div style="background:var(--card-bg);padding:1.8rem;border-radius:16px;border:1px solid rgba(0,245,255,0.2);">
+                    <h3 style="color:var(--accent);">📞 Expert Guidance</h3>
+                    <p style="color:var(--text-secondary);">Free project consultation by certified engineers.</p>
+                </div>
+                <div style="background:var(--card-bg);padding:1.8rem;border-radius:16px;border:1px solid rgba(0,245,255,0.2);">
+                    <h3 style="color:var(--accent);">🚚 Fast Delivery</h3>
+                    <p style="color:var(--text-secondary);">Within Varanasi in 4 hours • Nearby districts same day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS -->
+    <section class="reviews">
+        <div style="max-width:1200px;margin:0 auto;">
+            <h2 class="section-title" style="text-align:center;">What Varanasi Says About Us</h2>
+            
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p style="font-style:italic;color:var(--text-secondary);">"Bought my first Arduino kit here. The support team helped me build my line follower robot in one weekend. Best electronics store in Varanasi!"</p>
+                    <div style="margin-top:2rem;display:flex;align-items:center;gap:1rem;">
+                        <div style="width:40px;height:40px;background:#112233;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;">👨‍🔬</div>
+                        <div>
+                            <strong>Rahul Sharma</strong><br>
+                            <small>Student, IIT-BHU • Varanasi</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p style="font-style:italic;color:var(--text-secondary);">"Installed 1.5kVA inverter + solar panel at my home in Sigra. Super professional team and excellent after-sales service. Highly recommended!"</p>
+                    <div style="margin-top:2rem;display:flex;align-items:center;gap:1rem;">
+                        <div style="width:40px;height:40px;background:#112233;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;">👷‍♂️</div>
+                        <div>
+                            <strong>Priya Singh</strong><br>
+                            <small>Homeowner • Assi Ghat, Varanasi</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p style="font-style:italic;color:var(--text-secondary);">"Genuine components at great prices. Got my robotics club project parts delivered same day. VARATECH is now our go-to store in Uttar Pradesh."</p>
+                    <div style="margin-top:2rem;display:flex;align-items:center;gap:1rem;">
+                        <div style="width:40px;height:40px;background:#112233;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;">🧪</div>
+                        <div>
+                            <strong>Dr. Amit Verma</strong><br>
+                            <small>Professor, BHU • Varanasi</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCAL SEO / CONTACT SECTION -->
+    <section class="local">
+        <div class="local-content">
+            <div>
+                <h2 style="font-size:2.2rem;line-height:1.3;">Proudly Serving Varanasi &amp; Uttar Pradesh</h2>
+                <p style="font-size:1.2rem;color:var(--text-secondary);margin-top:1.5rem;">
+                    Located in the spiritual heart of India, VARATECH is Varanasi’s premier electronics and DIY destination. 
+                    We serve customers from Lanka, Sigra, Assi, Sarnath, Ramnagar, and all nearby towns in Uttar Pradesh. 
+                    Whether you need Arduino boards for your school project, heavy-duty inverters for your shop, or complete solar solutions for your home – we deliver fast and support you every step of the way.
+                </p>
+                <p style="margin-top:2rem;color:var(--accent);font-weight:600;">
+                    📍 Shop No. 12, Lanka Market, Varanasi, Uttar Pradesh 221005
+                </p>
+            </div>
+            
+            <!-- Contact Card -->
+            <div class="local-info">
+                <h3 style="color:var(--accent);margin-bottom:1.5rem;">Get in Touch Today</h3>
+                <p style="margin-bottom:1rem;"><strong>Phone:</strong> <a href="tel:+919876543210" style="color:var(--text-primary);">+91 98765 43210</a></p>
+                <p style="margin-bottom:1rem;"><strong>WhatsApp:</strong> <a href="https://wa.me/919876543210" style="color:var(--text-primary);">+91 98765 43210</a></p>
+                <p style="margin-bottom:1.5rem;"><strong>Email:</strong> <a href="mailto:support@varatech.in" style="color:var(--text-primary);">support@varatech.in</a></p>
+                
+                <div style="background:rgba(0,245,255,0.1);padding:1rem;border-radius:12px;margin-top:2rem;text-align:center;">
+                    <strong>🕒 Open 10 AM – 8 PM</strong><br>
+                    <small>Monday to Sunday • Closed on major festivals</small>
+                </div>
+                
+                <a href="#" class="btn btn-primary" style="margin-top:2rem;width:100%;justify-content:center;">Visit Our Store in Varanasi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <!-- Logo + About -->
+            <div>
+                <div class="footer-logo">VARATECH ⚡</div>
+                <p style="color:var(--text-secondary);margin-top:1rem;max-width:280px;">
+                    Premium electronics, robotics &amp; power solutions. Your trusted partner in Varanasi since 2018.
+                </p>
+                <div class="socials" style="margin-top:2rem;">
+                    <a href="#">📸</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">▶️</a>
+                    <a href="#">📘</a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Shop All Products</a></li>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Bulk Enquiry</a></li>
+                    <li><a href="#">Student Discounts</a></li>
+                </ul>
+            </div>
+            
+            <!-- Categories -->
+            <div class="footer-links">
+                <h4>Popular Categories</h4>
+                <ul>
+                    <li><a href="#">Arduino Boards</a></li>
+                    <li><a href="#">Inverters &amp; Solar</a></li>
+                    <li><a href="#">Robotics Kits</a></li>
+                    <li><a href="#">Sensors &amp; Modules</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div class="footer-contact">
+                <h4 style="color:var(--accent);">Contact Us</h4>
+                <p>Shop No. 12, Lanka Market<br>Varanasi, Uttar Pradesh 221005</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ support@varatech.in</p>
+                <p style="margin-top:1rem;font-size:0.9rem;color:var(--text-secondary);">GSTIN: 09AAECV1234A1Z5</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            © 2026 VARATECH Electronics &amp; DIY Store, Varanasi, Uttar Pradesh. All Rights Reserved.<br>
+            Built as a high-end static homepage • Pure HTML5 + CSS3
+        </div>
+    </footer>
+
+</body>
+</html>
